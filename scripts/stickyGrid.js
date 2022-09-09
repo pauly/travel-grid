@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const fs = require('fs')
-const { svg, svgNote } = require('./stickySVG')
+const { rand, svg, svgNote, wobblyLine } = require('./stickySVG')
 const ticketWidth = 100
 const margin = 10
 const lineStraightness = 40
@@ -67,8 +67,6 @@ fs.readFile(file, 'utf8', (err, content) => {
   const mappedTickets = grid.flat()
     .reverse()
 
-  const rand = (a, b = 0) => Math.round(Math.random() * a + b)
-
   const width = Math.max.apply(null, mappedTickets.map(note => note.x)) + ticketWidth + margin
   const height = Math.max.apply(null, mappedTickets.map(note => note.y)) + ticketWidth + (notes.length * 10)
   const yAxis = margin
@@ -92,28 +90,12 @@ fs.readFile(file, 'utf8', (err, content) => {
   const dangerTicket = mappedTickets.find(ticket => ticket.score < 1)
   const dangerLine = dangerTicket && dangerTicket.y
   if (dangerLine) {
-    let x = rand(5, 5)
-    const points = [String([x, dangerLine])]
-    while (x < width - lineStraightness) {
-      x = Math.round(rand(lineStraightness, x))
-      y = Math.round(rand(2, dangerLine - 1))
-      points.push(String([x, y]))
-    }
-    axes.push(`<polyline stroke="#fcc" fill="none" points="${points.join(' ')}" />`)
-    axes.push(`<text x="${rand(5, margin)}" y="${dangerLine + margin}" fill="#fcc">danger zone</text>`)
+    axes.push(wobblyLine({ label: 'danger zone', color: '#fcc', from: [rand(5, 5), dangerLine], to: [width - rand(5, 5), dangerLine] }))
   }
   const winningTicket = mappedTickets.find(ticket => ticket.score > 9)
   const winningLine = winningTicket && (winningTicket.y + 100)
   if (winningLine) {
-    let x = rand(5, 5)
-    const points = [String([x, winningLine])]
-    while (x < width - lineStraightness) {
-      x = Math.round(rand(lineStraightness, x))
-      y = Math.round(rand(2, winningLine - 1))
-      points.push(String([x, y]))
-    }
-    axes.push(`<polyline stroke="#ccf" fill="none" points="${points.join(' ')}" />`)
-    axes.push(`<text x="${rand(5, margin)}" y="${winningLine + margin}" fill="#ccf">winning</text>`)
+    axes.push(wobblyLine({ label: 'winning', color: '#ccf', from: [rand(5, 5), winningLine], to: [width - rand(5, 5), winningLine] }))
   }
   const output = svg(mappedTickets.map(svgNote), { notes, width, height, axis: axes.join('\n    ') })
   console.log(output)

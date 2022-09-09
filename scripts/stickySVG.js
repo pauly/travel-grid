@@ -1,5 +1,18 @@
 const randomness = 6
 
+const rand = exports.rand = (a, b = 0) => Math.round(Math.random() * a + b)
+
+exports.wobblyLine = ({ from: [x, y], to, label, color = '#ccc', lineStraightness = 30, margin = 10 }) => {
+  const points = [String([x, y])]
+  while (x < to[0] - lineStraightness) {
+    x = Math.round(rand(lineStraightness, x))
+    y = Math.round(rand(2, to[1] - 1))
+   points.push(String([x, y]))
+  }
+  return `<polyline stroke="${color}" fill="none" points="${points.join(' ')}" />
+    <text x="${rand(5, margin)}" y="${y + margin}" fill="${color}">${label}</text>`
+}
+
 const lineOfText = exports.lineOfText = startingY => (line, index) => {
   return `<text x="20" y="${index * 10 + startingY}">${line.replace(/&/, '&amp;')}</text>`
 }

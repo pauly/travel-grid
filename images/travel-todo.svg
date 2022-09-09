@@ -17,12 +17,12 @@
     </g>
   </defs>
   <g font-family="Arial, Helvetica, sans-serif" font-size="8">
-    <polyline stroke="#ccc" fill="none" points="10,500 11,487 10,452 10,452 11,429 9,403 11,403 10,396 10,356 10,321 10,285 11,274 10,254 10,251 10,221 11,204 9,167 11,157 11,123 10,101 11,100 10,61 9,60 10,35 5,44 10,35 13,43" />
-    <text fill="#ccc" transform="translate(6, 255) rotate(-90)">adopting</text>
-    <polyline stroke="#fcc" fill="none" points="6,300 22,300 40,299 56,300 60,301 98,300 131,301 134,300 142,300 152,300 186,299 189,300 218,300 233,300 251,300 275,300 307,299 323,299 349,300" />
-    <text x="12" y="310" fill="#fcc">danger zone</text>
-    <polyline stroke="#ccf" fill="none" points="8,100 31,99 59,101 62,100 98,100 128,100 154,100 156,99 174,100 198,100 225,100 238,99 262,101 298,99 308,99 322,101 333,100 352,99" />
-    <text x="13" y="110" fill="#ccf">winning</text>
+    <polyline stroke="#ccc" fill="none" points="10,500 9,465 9,438 10,399 10,393 11,354 9,320 10,308 10,273 9,260 10,238 11,230 11,222 11,192 10,186 11,170 10,167 10,138 10,101 10,74 11,68 9,56 10,28 7,36 10,28 14,37" />
+    <text fill="#ccc" transform="translate(5, 255) rotate(-90)">adopting</text>
+    <polyline stroke="#fcc" fill="none" points="6,300 36,299 57,300 62,300 86,300 109,300 139,300 162,300 170,301 175,299 179,300 199,299 220,300 248,299 259,301 276,300 277,300 280,300 286,299 297,300 312,301 334,299 338,300 363,300" />
+    <text x="14" y="310" fill="#fcc">danger zone</text>
+    <polyline stroke="#ccf" fill="none" points="9,100 20,101 35,99 53,100 73,101 85,100 107,101 119,100 149,101 175,100 176,100 187,100 195,99 208,100 217,99 235,101 246,100 271,99 282,101 298,100 310,100 314,99 320,101 345,99" />
+    <text x="12" y="109" fill="#ccf">winning</text>
     <text x="20" y="400">1. Pleased with Osprey, but Clare got some good generic cubes. My cheapos fell apart.</text>
     <text x="20" y="410">2. I wear these most days anyway, but perfect for travel.</text>
     <text x="20" y="420">3. Empty it to go through security and refill the other side.</text>
@@ -35,7 +35,7 @@
     <text x="20" y="490">10. I love them, but they're too hot for hot weather even with the vents.</text>
     <text x="20" y="500">11. I like the micro razor, but is just taking one disposable blade and using hotel soap better?</text>
     <svg x="180" y="300">
-      <g transform="translate(0 0) rotate(0.5 50 50)">
+      <g transform="translate(-3 -5) rotate(2.7 50 50)">
         <use href="#note" transform="scale(0.3 0.3)" />
         
         <text x="20" y="60">New Fjallraven</text>
@@ -44,7 +44,7 @@
       </g>
     </svg>
     <svg x="270" y="300">
-      <g transform="translate(-4 -1) rotate(-0.6 50 50)">
+      <g transform="translate(-5 -1) rotate(0.4 50 50)">
         <use href="#note" transform="scale(0.3 0.3)" />
         
         <text x="20" y="60">More socks than</text>
@@ -53,7 +53,7 @@
       </g>
     </svg>
     <svg x="90" y="240">
-      <g transform="translate(-6 -1) rotate(-2.6 50 50)">
+      <g transform="translate(0 -6) rotate(1.6 50 50)">
         <use href="#note" transform="scale(0.3 0.3)" />
         
         <text x="20" y="60">Shirt with more</text>
@@ -62,7 +62,7 @@
       </g>
     </svg>
     <svg x="180" y="240">
-      <g transform="translate(0 -6) rotate(-2.7 50 50)">
+      <g transform="translate(-5 -1) rotate(-0.1 50 50)">
         <use href="#note" transform="scale(0.3 0.3)" />
         
         <text x="20" y="60">"Adventure before</text>
@@ -70,14 +70,14 @@
       </g>
     </svg>
     <svg x="270" y="240">
-      <g transform="translate(-3 -4) rotate(-0.6 50 50)">
+      <g transform="translate(-3 0) rotate(-1.4 50 50)">
         <use href="#note" transform="scale(0.3 0.3)" />
         
         <text x="20" y="60">Micro razor (11)</text>
       </g>
     </svg>
     <svg x="180" y="180">
-      <g transform="translate(-2 -1) rotate(-2.1 50 50)">
+      <g transform="translate(-5 0) rotate(-2.0 50 50)">
         <use href="#note" transform="scale(0.3 0.3)" />
         
         <text x="20" y="60">Throw away initial</text>
@@ -85,7 +85,7 @@
       </g>
     </svg>
     <svg x="270" y="180">
-      <g transform="translate(-5 -3) rotate(-0.0 50 50)">
+      <g transform="translate(-4 -3) rotate(0.9 50 50)">
         <use href="#note" transform="scale(0.3 0.3)" />
         
         <text x="20" y="60">Tote bag good enough</text>
@@ -93,7 +93,7 @@
       </g>
     </svg>
     <svg x="270" y="120">
-      <g transform="translate(-4 -3) rotate(-0.9 50 50)">
+      <g transform="translate(0 -2) rotate(2.0 50 50)">
         <use href="#note" transform="scale(0.3 0.3)" />
         
         <text x="20" y="60">Chargers always in</text>
@@ -101,7 +101,7 @@
       </g>
     </svg>
     <svg x="270" y="60">
-      <g transform="translate(-3 -6) rotate(2.6 50 50)">
+      <g transform="translate(-4 -1) rotate(0.9 50 50)">
         <use href="#note" transform="scale(0.3 0.3)" />
         
         <text x="20" y="60">HydraPak Ultraflask</text>
@@ -110,14 +110,14 @@
       </g>
     </svg>
     <svg x="180" y="0">
-      <g transform="translate(-4 0) rotate(2.3 50 50)">
+      <g transform="translate(-4 -6) rotate(1.9 50 50)">
         <use href="#note" transform="scale(0.3 0.3)" />
         
         <text x="20" y="60">Packing cubes (1)</text>
       </g>
     </svg>
     <svg x="270" y="0">
-      <g transform="translate(-5 -1) rotate(1.0 50 50)">
+      <g transform="translate(-6 -3) rotate(2.8 50 50)">
         <use href="#note" transform="scale(0.3 0.3)" />
         
         <text x="20" y="60">Pickpocket proof</text>
